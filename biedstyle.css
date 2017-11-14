@@ -1,0 +1,72 @@
+*{
+	padding    : 0;
+	margin     : 0;
+	list-style : none;
+}
+.wrapBg{
+	position   : relative;
+	width      : 640px;
+	height     : 710px;
+	background : url("icon/bg.png");
+	margin     : 0 auto;
+	overflow   : hidden;
+}
+.title{
+	position  : absolute;
+	left      : calc(50% - 80px);
+	top       : 100px;
+	color     : #c21a21;
+	font-size : 48px;
+	animation : myfirst1 600ms linear infinite alternate;
+}
+.bied{
+	position  : absolute;
+	left      : 120px;
+	top       : 60px;
+	animation : myfirst 600ms linear infinite alternate;
+}
+@keyframes myfirst{
+	to{ top : 40px; }
+}
+@keyframes myfirst1{
+	to{ top : 80px; }
+}
+.start,.close{
+	position   : absolute;
+	width      : 60px;
+	height     : 30px;
+	left       : calc(50% - 30px);
+	bottom     : 300px;
+	background : #E05F07;
+	color      : #ffffff;
+	border     : none;
+}
+.grassLand{
+	width      : 640px;
+	height     : 220px;
+	position   : absolute;
+	background : url("icon/grassland.png");
+	bottom     : 0;
+}
+.grassLand.a{
+	left : 0;
+}
+.grassLand.b{
+	left : 640px;
+}
+/*插入创建小鸟对象*/
+.insert{
+	position   : absolute;
+	width      : 40px;
+	height     : 28px;
+	background : url("icon/bird0.png");
+	left       : 120px;
+	top        : 200px;
+}
+
+/*障碍*/
+.createDiv{
+	position : absolute;
+	width    : 62px;
+	left     : 450px;
+}
